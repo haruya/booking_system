@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- ホスト: 127.0.0.1
--- 生成日時: 2015 年 10 月 15 日 13:14
+-- 生成日時: 2015 年 10 月 26 日 10:02
 -- サーバのバージョン: 5.5.32
 -- PHP のバージョン: 5.4.19
 
@@ -39,17 +39,6 @@ CREATE TABLE IF NOT EXISTS `appointments` (
   `modified` datetime NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
-
---
--- テーブルのデータのダンプ `appointments`
---
-
-INSERT INTO `appointments` (`id`, `user_id`, `order_id`, `appo_date`, `time_id`, `table`, `created`, `modified`) VALUES
-(1, 1, 2, '2015-10-13', 1, 1, '2015-10-13 00:00:00', '2015-10-13 00:00:00'),
-(2, 1, 2, '2015-10-15', 1, 1, '2015-10-15 00:00:00', '2015-10-15 00:00:00'),
-(4, 1, 2, '2015-10-15', 1, 2, '2015-10-15 10:59:18', '2015-10-15 10:59:18'),
-(5, 1, 1, '2015-10-15', 3, 1, '2015-10-15 10:59:50', '2015-10-15 10:59:50'),
-(6, 1, 2, '2015-10-15', 1, 3, '2015-10-15 11:02:00', '2015-10-15 11:02:00');
 
 -- --------------------------------------------------------
 
@@ -128,7 +117,6 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `email`, `password`, `name`, `created`, `modified`) VALUES
-(1, 'ichikawa@sonar-enterprise.com', 'ichikawa', 'ichikawa', '2015-10-11 00:00:00', '2015-10-11 00:00:00'),
 (2, 'nanashi@gmail.com', 'nanashi', 'nanashi', '2015-10-15 00:00:00', '2015-10-15 00:00:00');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

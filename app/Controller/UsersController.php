@@ -22,7 +22,7 @@ class UsersController extends AppController {
     }
 
     /**
-     * 予約一覧へ
+     * 予約一覧へ飛ばす
      */
     public function index() {
         // var_dump($this->Auth->user());exit;
